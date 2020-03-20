@@ -7,12 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Add Github Actions for project linting.
-
 ## [0.1.0] - 2020-03-20
 
 ### Added
 
+- Add Github Actions for project linting.
 - Initial commit.
 
 [unreleased]: https://github.com/CoffeeAndCode/terraform-aws-vendor-access/compare/v0.1.0...HEAD
