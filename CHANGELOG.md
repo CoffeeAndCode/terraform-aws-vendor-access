@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add description to `assume_role_url` output.
+
+### Changed
+
+- `role_name` and `name_prefix` variables should now be marked as optional.
+
 ## [0.1.0] - 2020-03-20
 
 ### Added

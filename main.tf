@@ -38,8 +38,8 @@ resource "aws_iam_policy" "policy" {
 resource "aws_iam_role" "role" {
   assume_role_policy = data.aws_iam_policy_document.assume_role.json
   description        = "Vendor role: ${var.vendor_aws_id}"
-  name               = var.role_name == null ? null : var.role_name
-  name_prefix        = var.role_name == null ? var.name_prefix : null
+  name               = can(coalesce(var.role_name)) ? var.role_name : null
+  name_prefix        = can(coalesce(var.role_name)) ? null : try(coalesce(var.name_prefix), null)
   tags               = var.tags
 }
 
