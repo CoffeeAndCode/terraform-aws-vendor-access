@@ -7,7 +7,7 @@ variable "mfa_max_age" {
 variable "name_prefix" {
   description = "Optional name_prefix to use for generated resources."
   type        = string
-  default     = null
+  default     = ""
 }
 
 variable "permissions" {
@@ -18,7 +18,7 @@ variable "permissions" {
 variable "role_name" {
   description = "Explicit role name for assuming."
   type        = string
-  default     = null
+  default     = ""
 }
 
 variable "tags" {
